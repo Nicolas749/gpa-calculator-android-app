@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity_viewMaterias">
+
+    <ListView
+        android:id="@+id/listMaterias"
+        android:layout_width="381dp"
+        android:layout_height="157dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/buttonReset"
+        android:layout_width="109dp"
+        android:layout_height="52dp"
+        android:layout_marginStart="172dp"
+        android:layout_marginTop="12dp"
+
+        android:background="@drawable/redondo"
+        android:backgroundTint="@android:color/holo_red_light"
+        android:text="Resetear Valores"
+        app:layout_constraintStart_toEndOf="@+id/buttonOrder"
+        app:layout_constraintTop_toBottomOf="@+id/editNotas" />
+
+    <Button
+        android:id="@+id/buttonEdit"
+        android:layout_width="114dp"
+        android:layout_height="49dp"
+        android:layout_marginTop="12dp"
+        android:background="@drawable/redondo"
+        android:backgroundTint="@color/purple_200"
+        android:text="Editar Materia"
+        app:layout_constraintEnd_toStartOf="@+id/buttonReset"
+        app:layout_constraintHorizontal_bias="0.485"
+        app:layout_constraintStart_toEndOf="@+id/buttonOrder"
+        app:layout_constraintTop_toBottomOf="@+id/editNotas" />
+
+    <Button
+        android:id="@+id/buttonOrder"
+        android:layout_width="98dp"
+        android:layout_height="55dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="12dp"
+        android:background="@drawable/redondo"
+        android:backgroundTint="@color/teal_200"
+        android:text="Ordenar por nota"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editNotas" />
+
+    <EditText
+        android:id="@+id/editMaterias"
+        android:layout_width="316dp"
+        android:layout_height="59dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="48dp"
+        android:ems="10"
+        android:hint="Nombre Materia"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/listMaterias" />
+
+    <EditText
+        android:id="@+id/editCodigos"
+        android:layout_width="318dp"
+        android:layout_height="58dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="44dp"
+        android:ems="10"
+        android:hint="Codigo"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editMaterias" />
+
+    <EditText
+        android:id="@+id/editNotas"
+        android:layout_width="316dp"
+        android:layout_height="57dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="44dp"
+        android:ems="10"
+        android:hint="Nota"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editCredito" />
+
+    <EditText
+        android:id="@+id/editCredito"
+        android:layout_width="314dp"
+        android:layout_height="53dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="44dp"
+        android:ems="10"
+        android:hint="Creditos"
+        android:inputType="number"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editCodigos" />
+
+    <Button
+        android:id="@+id/buttonDel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="88dp"
+        android:background="@drawable/redondo"
+        android:backgroundTint="#FF9800"
+        android:text="Eliminar Materia Especifica"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonEdit" />
+
+</android.support.constraint.ConstraintLayout>
